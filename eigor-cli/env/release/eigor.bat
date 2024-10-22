@@ -9,7 +9,7 @@ SET APPLICATION_HOME=.
 SET MAIN_CLASS=it.infocert.eigor.cli.Eigor
 
 REM ------- for normal operation -------
-SET JVM_ARGUMENTS= -Xmx512m  -Dlogback.configurationFile=%APPLICATION_HOME%\conf\logback.xml -Deigor.configurationFile=%APPLICATION_HOME%\conf\eigor.properties
+SET JVM_ARGUMENTS= -Xmx512m -Dfile.encoding=UTF-8 -Dlogback.configurationFile=%APPLICATION_HOME%\conf\logback.xml -Deigor.configurationFile=%APPLICATION_HOME%\conf\eigor.properties
 
 REM ------- for remote debug -------
 REM SET JVM_ARGUMENTS=-agentlib:jdwp=transport=dt_socket,server=n,address=localhost:5005 -Xmx512m  -Dlogback.configurationFile=%APPLICATION_HOME%\conf\logback.xml -Deigor.configurationFile=%APPLICATION_HOME%\conf\eigor.properties
